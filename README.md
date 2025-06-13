@@ -40,7 +40,7 @@ src/
 
 1. Clone the repository:
 ```sh
-git clone https://github.com/yourusername/InboxGuard.git
+git clone https://github.com/Rohith-AI-HUB/InboxGuard.git
 ```
 
 2. Install dependencies:
