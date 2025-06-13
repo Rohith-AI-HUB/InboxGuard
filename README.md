@@ -1,97 +1,112 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# InboxGuard
 
-# Getting Started
+A smart email management application that helps users organize their inbox with advanced filtering and categorization features.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## 📱 Features
 
-## Step 1: Start Metro
+- **Smart Inbox Management**: Categorize emails into Inbox, Spam, Archive, and Deleted sections
+- **Message Details View**: Detailed view for each email message
+- **Bottom Navigation**: Easy access to all main sections of the app
+- **Cross-platform Support**: Works seamlessly on both Android and iOS devices
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## ⚙️ Technology Stack
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+- **React Native**: 0.80.0 - Cross-platform mobile development framework
+- **TypeScript**: 5.0.4 - Typed JavaScript superset for better code maintainability
+- **React**: 19.1.0 - UI component library
+- **Navigation**: 
+  - @react-navigation/native: ^7.1.10
+  - @react-navigation/bottom-tabs: ^7.3.14
+  - @react-navigation/native-stack: ^7.3.14
+- **UI Components**:
+  - react-native-paper: ^5.14.5 - Material Design library
+  - react-native-vector-icons: ^10.2.0 - Icon library
 
-```sh
-# Using npm
-npm start
+## 📁 Project Structure
 
-# OR using Yarn
-yarn start
+```
+src/
+├── navigation/        # Application navigation setup
+│   └── AppNavigator.tsx # Main navigation configuration using React Navigation
+└── screens/           # UI screens components
+    ├── HomeScreen.tsx     # Inbox messages screen
+    ├── SpamScreen.tsx     # Spam/junk messages screen
+    ├── ArchiveScreen.tsx  # Archived messages screen
+    ├── DeletedScreen.tsx  # Deleted messages screen
+    └── MessageDetails.tsx # Detailed view of a single message
 ```
 
-## Step 2: Build and run your app
+## 🛠️ Installation
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
+1. Clone the repository:
 ```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
+git clone https://github.com/yourusername/InboxGuard.git
 ```
 
-### iOS
+2. Install dependencies:
+```sh
+cd InboxGuard
+npm install
+# or
+yarn install
+```
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
+3. For iOS only (first time setup):
 ```sh
 bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
 bundle exec pod install
 ```
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+## ▶️ Running the Application
 
+1. Start Metro bundler:
 ```sh
-# Using npm
-npm run ios
+npm start
+# or
+yarn start
+```
 
-# OR using Yarn
+2. Run the app on your preferred platform:
+```sh
+# Android
+npm run android
+# or
+yarn android
+
+# iOS
+npm run ios
+# or
 yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+## 🧪 Testing
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+Run tests using:
+```sh
+npm test
+# or
+yarn test
+```
 
-## Step 3: Modify your app
+## 🧹 Linting
 
-Now that you have successfully run the app, let's make changes!
+Run ESLint for code quality checks:
+```sh
+npm run lint
+# or
+yarn lint
+```
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+## 🤝 Contributing
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+Contributions are welcome! Please follow these guidelines:
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+1. Fork the project
+2. Create a new branch (`git checkout -b feature-name`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature-name`)
+5. Open a Pull Request
 
-## Congratulations! :tada:
+## 📄 License
 
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

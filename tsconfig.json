@@ -1,3 +1,7 @@
 {
+
+  "compilerOptions": {
+    "types": ["jest"]
+  },
   "extends": "@react-native/typescript-config"
 }
